@@ -18,6 +18,8 @@ Using Threat Intelligence APIs, Flask-SocketIO for real-time monitoring, and Red
 
 ✅ Simulated Attack Testing – Allows for testing under real-world attack conditions to analyze system performance and efficiency.
 
+
+
 **Technologies Used:**
 
 🔹 Programming Language: Python
@@ -34,23 +36,31 @@ Using Threat Intelligence APIs, Flask-SocketIO for real-time monitoring, and Red
 
 🔹 Deployment: Ubuntu VM
 
+
+
 ## Commands to run ##
 
 **Clone the repo**
+
 https://github.com/Shashy027/Intrusion-Detection-and-Prevention-System.git
 
 **start redis**
+
 redis-server
 
 **start Backend**
+
 python3 backend.py
 
 **start proxy**
+
 python3 proxy.py
 
 # TIPS: #
 redis-cli FLUSHALL // cleans the redis and refreshes
+
 curl -X POST http://127.0.0.1:5000/proxy -H "Content-Type: application/json" -d '{"test": "data"}' // sending requests
+
 for i in {1..15}; do curl -X POST http://127.0.0.1:5000/proxy -H "Content-Type: application/json" -d '{"test": "data"}'; done // performing a DDOS attack
 
 
