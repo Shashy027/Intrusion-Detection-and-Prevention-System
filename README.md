@@ -5,21 +5,33 @@ Using Threat Intelligence APIs, Flask-SocketIO for real-time monitoring, and Red
 **Key Features:**
 
 ✅ Reverse Proxy-Based Security – Intercepts and filters all incoming traffic before reaching the backend server.
+
 ✅ Real-Time Threat Detection – Uses Threat Intelligence APIs (e.g., VirusTotal) to identify and block known malicious IPs.
+
 ✅ Rate Limiting Mechanism – Prevents excessive requests from overwhelming the server by automatically blocking high-volume traffic.
+
 ✅ Real-Time Monitoring Dashboard – Displays CPU usage, request count, memory consumption, request logs, and blocked IPs dynamically.
+
 ✅ Automatic & Manual IP Blacklisting – Identifies attackers in real time and allows administrators to block/unblock IPs as needed.
+
 ✅ Efficient Data Storage & Logging – Uses Redis to store blacklisted IPs and improve request processing speed.
+
 ✅ Simulated Attack Testing – Allows for testing under real-world attack conditions to analyze system performance and efficiency.
 
 **Technologies Used:**
 
 🔹 Programming Language: Python
+
 🔹 Framework: Flask
+
 🔹 Real-Time Monitoring: Flask-SocketIO
+
 🔹 Database & Caching: Redis
+
 🔹 Threat Intelligence: VirusTotal API (or similar APIs)
+
 🔹 Visualization: Chart.js (for graphical representation of real-time data)
+
 🔹 Deployment: Ubuntu VM
 
 ## Commands to run ##
